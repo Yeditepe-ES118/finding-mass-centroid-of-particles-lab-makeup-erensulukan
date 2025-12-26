@@ -1,0 +1,53 @@
+#+TITLE: ES118 Lab #7 Assignment
+#+AUTHOR: Ufuk Baler, MSc. & Assoc. Prof. Dr. Fethi Okyar
+#+SUBTITLE: 
+#+STARTUP: overview
+#+REVEAL_THEME: simple
+#+REVEAL_INIT_OPTIONS: slideNumber:"c/t", width:1920, height:1080, navigationMode:"linear", transition:"none"
+#+REVEAL_TITLE_SLIDE: <h1>%t</h1> <h2>%s</h2> <h5>%a</h5>
+#+OPTIONS: timestamp:nil toc:1 num:nil reveal_global_footer:nil
+#+REVEAL_EXTRA_CSS: ../style.css
+#+LATEX_HEADER: \usepackage{amsmath}
+
+* Find the mass centroid of three particles
+#+ATTR_HTML: :width 900px
+[[./instructions.png]]
+
+#+BEGIN_COMMENT
+If three point masses are located at
+
+\begin{equation}
+\vec p_1 = \begin{bmatrix}
+p_1^x\\
+p_1^y
+\end{bmatrix}\ , \ 
+\vec p_2 = \begin{bmatrix}
+p_2^x\\
+p_2^y
+\end{bmatrix}\ , \ 
+\vec p_3 = \begin{bmatrix}
+p_3^x\\
+p_3^y
+\end{bmatrix}
+\end{equation}
+and their corresponding masses are
+\begin{equation}
+m_1 \ , \ m_2 \ , \ m_3
+\end{equation}
+the position of the center of mass is
+\begin{equation}
+\vec c = \begin{bmatrix}
+c_x\\
+c_y
+\end{bmatrix}
+\end{equation}
+where $c_x$ and $c_y$ is respectively,
+\begin{equation}
+c_x = \frac{\sum_{i=1}^3 p_i^x m_i}{\sum_{i=1}^3 m_i}
+\end{equation}
+\begin{equation}
+c_y = \frac{\sum_{i=1}^3 p_i^y m_i}{\sum_{i=1}^3 m_i}
+\end{equation}
+
+Create a function called ~centroid~ in a new file called ~lab7.py~ so that it will take $p_1^x,p_1^y,p_2^x,p_2^y,p_3^x,p_3^y,m_1,m_2,m_3$ as inputs, and it will return the total mass, $c_x$ and $c_y$. It will also plot the particles and the center of mass.
+#+END_COMMENT
